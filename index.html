@@ -12,35 +12,37 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Merriweather', 'serif'],
-                    },
-                    colors: {
-                        brand: {
-                            green: '#059669', // Emerald 600
-                            dark: '#064e3b',  // Emerald 900
-                            soil: '#92400e',  // Amber 800
-                            corn: '#f59e0b',  // Amber 500
-                        }
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Montserrat', 'sans-serif'],
+                    serif: ['Montserrat', 'sans-serif'],
+                },
+                colors: {
+                    brand: {
+                        green: '#059669', // Emerald 600
+                        dark: '#064e3b',  // Emerald 900
+                        soil: '#92400e',  // Amber 800
+                        corn: '#f59e0b',  // Amber 500
                     }
                 }
             }
         }
-    </script>
+    }
+</script>
     
     <style>
-        /* Custom Styles for Placeholder Video Containers */
-        .media-placeholder {
-            background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-            background-size: 20px 20px;
+        
+        /* Custom Styles for Video Containers */
+        .media-container {
+            position: relative;
+            /* CHANGED: Background color updated to #1e240d */
+            background-color: #27a571;
+            overflow: hidden;
         }
         
         .blob {
@@ -138,7 +140,7 @@
     </header>
 
     <!-- The Process Section (Vertical) -->
-    <section id="process" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+    <section id="process" class="py-24 bg-slate-900 text-white relative overflow-hidden" style = "background-color: #21574e; ">
         <!-- Abstract Decoration -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
              <i class="fa-solid fa-seedling text-9xl absolute -top-10 -right-10 text-white transform rotate-12"></i>
