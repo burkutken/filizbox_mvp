@@ -4,43 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filizbox | The Future of Maize Cultivation</title>
-    <meta name="description" content="Filizbox: Pre-germinated, nutrient-wrapped seed balls for guaranteed maize growth.">
+    <meta name="description" data-translate="meta_desc" content="Filizbox: Pre-germinated, nutrient-wrapped seed balls for guaranteed maize growth.">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                fontFamily: {
-                    sans: ['Montserrat', 'sans-serif'],
-                    serif: ['Montserrat', 'sans-serif'],
-                },
-                colors: {
-                    brand: {
-                        green: '#059669', // Emerald 600
-                        dark: '#064e3b',  // Emerald 900
-                        soil: '#92400e',  // Amber 800
-                        corn: '#f59e0b',  // Amber 500
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            green: '#059669', // Emerald 600
+                            dark: '#064e3b',  // Emerald 900
+                            soil: '#92400e',  // Amber 800
+                            corn: '#f59e0b',  // Amber 500
+                        }
                     }
                 }
             }
         }
-    }
-</script>
+    </script>
     
     <style>
-        
         /* Custom Styles for Video Containers */
         .media-container {
             position: relative;
-            /* CHANGED: Background color updated to #1e240d */
             background-color: #27a571;
             overflow: hidden;
         }
@@ -55,13 +51,11 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex items-center space-x-2">
-                    <!-- Filizbox Logo SVG (Injected from user's provided code) -->
-                    <svg class="h-12 w-auto text-brand-green" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 558.78 201.43">
+                    <svg class="h-12 w-auto" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 558.78 201.43">
                         <path d="M224.11,89.4h-7.69v34.54h-8.67v-34.54h-4.9v-7.01h4.9v-2.94c0-4.78,1.27-8.26,3.81-10.45,2.54-2.19,6.52-3.28,11.95-3.28v7.17c-2.61,0-4.45.49-5.5,1.47-1.06.98-1.58,2.68-1.58,5.09v2.94h7.69v7.01Z" fill="#1b6244" stroke-width="0"/>
                         <path d="M232.18,75.3c-1.06-1.06-1.58-2.36-1.58-3.92s.53-2.87,1.58-3.92,2.36-1.58,3.92-1.58,2.79.53,3.85,1.58c1.06,1.06,1.58,2.36,1.58,3.92s-.53,2.87-1.58,3.92c-1.06,1.06-2.34,1.58-3.85,1.58s-2.87-.53-3.92-1.58ZM240.32,82.39v41.56h-8.6v-41.56h8.6Z" fill="#1b6244" stroke-width="0"/>
                         <path d="M260.23,68.13v55.81h-8.6v-55.81h8.6Z" fill="#1b6244" stroke-width="0"/>
@@ -80,14 +74,19 @@
                     </svg>
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#problem" class="text-slate-600 hover:text-brand-green font-medium">The Problem</a>
-                    <a href="#process" class="text-slate-600 hover:text-brand-green font-medium">Our Process</a>
-                    <a href="#comparison" class="text-slate-600 hover:text-brand-green font-medium">Why Us?</a>
-                    <a href="#contact" class="px-6 py-2.5 bg-brand-green text-white rounded-full font-semibold hover:bg-brand-dark transition shadow-lg shadow-brand-green/30">
+                    <a href="#problem" data-translate="nav_problem" class="text-slate-600 hover:text-brand-green font-medium">The Problem</a>
+                    <a href="#process" data-translate="nav_process" class="text-slate-600 hover:text-brand-green font-medium">Our Process</a>
+                    <a href="#comparison" data-translate="nav_why" class="text-slate-600 hover:text-brand-green font-medium">Why Us?</a>
+                    
+                    <button onclick="toggleLanguage()" class="flex items-center space-x-1 text-slate-600 hover:text-brand-green font-medium focus:outline-none">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="lang-label">TR</span>
+                    </button>
+
+                    <a href="#contact" data-translate="nav_preorder" class="px-6 py-2.5 bg-brand-green text-white rounded-full font-semibold hover:bg-brand-dark transition shadow-lg shadow-brand-green/30">
                         Pre-Order MVP
                     </a>
                 </div>
-                <!-- Mobile menu button -->
                 <div class="md:hidden">
                     <button onclick="toggleMobileMenu()" class="text-slate-600 focus:outline-none">
                         <i class="fa-solid fa-bars text-2xl"></i>
@@ -95,175 +94,196 @@
                 </div>
             </div>
         </div>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
-            <a href="#problem" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">The Problem</a>
-            <a href="#process" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Our Process</a>
-            <a href="#comparison" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Why Us?</a>
-            <a href="#contact" class="block py-3 px-4 text-brand-green font-bold">Pre-Order MVP</a>
+            <a href="#problem" data-translate="nav_problem" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">The Problem</a>
+            <a href="#process" data-translate="nav_process" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Our Process</a>
+            <a href="#comparison" data-translate="nav_why" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Why Us?</a>
+            <a href="#contact" data-translate="nav_preorder" class="block py-3 px-4 text-brand-green font-bold">Pre-Order MVP</a>
+            <button onclick="toggleLanguage()" class="block w-full text-left py-3 px-4 text-slate-600 hover:bg-slate-50 font-medium">
+                <i class="fa-solid fa-globe mr-2"></i> <span id="mobile-lang-label">TR / EN</span>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <!-- Background Decor: Video Loop -->
         <div class="absolute inset-0 z-0">
             <video autoplay loop muted playsinline class="w-full h-full object-cover">
-                <!-- I added a sample corn field video here. Replace this src with your own file path (e.g., 'assets/hero-video.mp4') -->
                 <source src="video\waste.mp4" type="video/mp4">
             </video>
-            <!-- White overlay to ensure text remains readable over the video -->
             <div class="absolute inset-0 bg-white/80 backdrop-blur-[2px]"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-brand-dark text-sm font-semibold mb-6 border border-green-200">
                 <span class="w-2 h-2 rounded-full bg-brand-green mr-2 animate-pulse"></span>
-                The Future of Agriculture
+                <span data-translate="hero_badge">The Future of Agriculture</span>
             </div>
             <h1 class="text-5xl md:text-7xl font-serif font-bold text-slate-900 mb-8 leading-tight">
-                Stop Planting Seeds.<br>
-                Start Planting <span class="text-brand-green">Success.</span>
+                <span data-translate="hero_title">Stop Planting Seeds.<br>Start Planting <span class="text-brand-green">Success.</span></span>
             </h1>
-            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+            <p data-translate="hero_desc" class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Filizbox revolutionizes maize farming by pre-germinating seeds and wrapping them in a nutrient-rich earth shield. <br><strong>100% Germination Rate. Zero Waste.</strong>
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#process" class="px-8 py-4 bg-brand-green text-white rounded-full font-bold text-lg hover:bg-brand-dark transition shadow-xl shadow-brand-green/30 flex items-center justify-center gap-2">
+                <a href="#process" data-translate="btn_how" class="px-8 py-4 bg-brand-green text-white rounded-full font-bold text-lg hover:bg-brand-dark transition shadow-xl shadow-brand-green/30 flex items-center justify-center gap-2">
                     See How It Works <i class="fa-solid fa-arrow-down"></i>
                 </a>
-                <a href="#comparison" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-bold text-lg hover:border-brand-green hover:text-brand-green transition flex items-center justify-center">
+                <a href="#comparison" data-translate="btn_compare" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-bold text-lg hover:border-brand-green hover:text-brand-green transition flex items-center justify-center">
                     Compare Savings
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- The Process Section (Vertical) -->
     <section id="process" class="py-24 bg-slate-900 text-white relative overflow-hidden" style = "background-color: #21574e; ">
-        <!-- Abstract Decoration -->
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
              <i class="fa-solid fa-seedling text-9xl absolute -top-10 -right-10 text-white transform rotate-12"></i>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-20">
-                <span class="text-brand-corn font-bold tracking-widest uppercase text-sm">Our Technology</span>
-                <h2 class="text-4xl md:text-5xl font-serif font-bold mt-2">The Filizbox Method</h2>
-                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">From a simple seed to a robust, pre-sprouted earth ball. Here is how we engineer success.</p>
+                <span data-translate="process_badge" class="text-brand-corn font-bold tracking-widest uppercase text-sm">Our Technology</span>
+                <h2 data-translate="process_title" class="text-4xl md:text-5xl font-serif font-bold mt-2">The Filizbox Method</h2>
+                <p data-translate="process_desc" class="text-slate-400 mt-4 max-w-2xl mx-auto">From a simple seed to a robust, pre-sprouted earth ball. Here is how we engineer success.</p>
             </div>
 
             <div class="space-y-24 relative">
-                <!-- Vertical Line -->
                 <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-slate-700 hidden md:block"></div>
 
-                <!-- Step 1: Hydro-Activation -->
                 <div class="flex flex-col md:flex-row items-center gap-12 relative">
                     <div class="md:w-1/2 text-right order-2 md:order-1 pr-0 md:pr-12">
                         <div class="inline-block p-2 bg-blue-600 rounded-lg mb-4 shadow-lg shadow-blue-500/30">
                             <i class="fa-solid fa-water text-white text-xl"></i>
                         </div>
-                        <h3 class="text-3xl font-bold mb-4">1. Hydro-Activation</h3>
-                        <p class="text-slate-300 text-lg leading-relaxed">
+                        <h3 data-translate="step1_title" class="text-3xl font-bold mb-4">1. Hydro-Activation</h3>
+                        <p data-translate="step1_desc" class="text-slate-300 text-lg leading-relaxed">
                             We don't just plant dry seeds. We initiate the <strong>germination phase</strong> using a controlled hydro-environment. This wakes the seed up from dormancy, ensuring it is biologically active before it ever reaches the soil.
                         </p>
                     </div>
-                    <!-- Center Node -->
                     <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-500 rounded-full border-4 border-slate-900 hidden md:flex items-center justify-center">
                         <div class="w-3 h-3 bg-white rounded-full"></div>
                     </div>
-                    <!-- Video Container -->
                     <div class="md:w-1/2 order-1 md:order-2 pl-0 md:pl-12 w-full">
                         <div class="media-container rounded-2xl aspect-video w-full border border-slate-700 hover:border-blue-500 transition relative overflow-hidden">
-                            <!-- 2. PROCESS STEP 1 VIDEO SOURCE CHANGE -->
                             <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-2xl">
-                                <!-- IMPORTANT: Change the 'src' attribute below to your video file path -->
-                                <source src="video\seed_ball_conveyor.mp4" type="video/mp4" onerror="this.parentNode.style.backgroundImage='url(https://placehold.co/600x400/1e40af/ffffff?text=Hydro-Activation+Video+Missing)';">
+                                <source src="video\seed_ball_conveyor.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
                 </div>
 
-                <!-- Step 2: Earth Encapsulation -->
                 <div class="flex flex-col md:flex-row items-center gap-12 relative">
-                    <!-- Video Container -->
                     <div class="md:w-1/2 order-1 pr-0 md:pr-12 w-full">
                         <div class="media-container rounded-2xl aspect-video w-full border border-slate-700 hover:border-brand-soil transition relative overflow-hidden">
-                             <!-- 3. PROCESS STEP 2 VIDEO SOURCE CHANGE -->
                             <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-2xl">
-                                <!-- IMPORTANT: Change the 'src' attribute below to your video file path -->
-                                <source src="video\making_seed_ball.mp4" type="video/mp4" onerror="this.parentNode.style.backgroundImage='url(https://placehold.co/600x400/9a3412/ffffff?text=Earth+Encapsulation+Video+Missing)';">
+                                <source src="video\making_seed_ball.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
-                    <!-- Center Node -->
                     <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-brand-soil rounded-full border-4 border-slate-900 hidden md:flex items-center justify-center">
                         <div class="w-3 h-3 bg-white rounded-full"></div>
                     </div>
-                    <!-- Text -->
                     <div class="md:w-1/2 text-left order-2 pl-0 md:pl-12">
                         <div class="inline-block p-2 bg-brand-soil rounded-lg mb-4 shadow-lg shadow-amber-700/30">
                             <i class="fa-solid fa-globe text-white text-xl"></i>
                         </div>
-                        <h3 class="text-3xl font-bold mb-4">2. Earth Encapsulation</h3>
-                        <p class="text-slate-300 text-lg leading-relaxed">
+                        <h3 data-translate="step2_title" class="text-3xl font-bold mb-4">2. Earth Encapsulation</h3>
+                        <p data-translate="step2_desc" class="text-slate-300 text-lg leading-relaxed">
                             The activated seed is carefully wrapped in a proprietary blend of <strong>nutrient-rich soil and natural binders</strong>. This "Earth Ball" acts as a protective bunker, holding moisture and essential minerals directly against the seed coat.
                         </p>
                     </div>
                 </div>
 
-                <!-- Step 3: Verified Sprouting -->
                 <div class="flex flex-col md:flex-row items-center gap-12 relative">
                     <div class="md:w-1/2 text-right order-2 md:order-1 pr-0 md:pr-12">
                         <div class="inline-block p-2 bg-brand-green rounded-lg mb-4 shadow-lg shadow-brand-green/30">
                             <i class="fa-solid fa-check-double text-white text-xl"></i>
                         </div>
-                        <h3 class="text-3xl font-bold mb-4">3. Verified Sprouting</h3>
-                        <p class="text-slate-300 text-lg leading-relaxed">
+                        <h3 data-translate="step3_title" class="text-3xl font-bold mb-4">3. Verified Sprouting</h3>
+                        <p data-translate="step3_desc" class="text-slate-300 text-lg leading-relaxed">
                             We don't sell hope; we sell life. We allow the seed balls to begin sprouting in our facility. Only when the <strong>taproot is visible and viable</strong> is the Filizbox packed and shipped to you.
                         </p>
                     </div>
-                    <!-- Center Node -->
                     <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-brand-green rounded-full border-4 border-slate-900 hidden md:flex items-center justify-center">
                         <div class="w-3 h-3 bg-white rounded-full"></div>
                     </div>
-                    <!-- Video Container -->
                     <div class="md:w-1/2 order-1 md:order-2 pl-0 md:pl-12 w-full">
                          <div class="media-container rounded-2xl aspect-video w-full border border-slate-700 hover:border-brand-green transition relative overflow-hidden">
-                             <!-- 4. PROCESS STEP 3 VIDEO SOURCE CHANGE -->
                             <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-2xl">
-                                <!-- IMPORTANT: Change the 'src' attribute below to your video file path -->
-                                <source src="video\factory_inside.mp4" type="video/mp4" onerror="this.parentNode.style.backgroundImage='url(https://placehold.co/600x400/059669/ffffff?text=Sprouting+Video+Missing)';">
+                                <source src="video\factory_inside.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
                 </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-12 relative">
+                    <div class="md:w-1/2 order-1 pr-0 md:pr-12 w-full">
+                        <div class="media-container rounded-2xl aspect-video w-full border border-slate-700 hover:border-brand-soil transition relative overflow-hidden">
+                            <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-2xl">
+                                <source src="video\filizbox_shipping.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-brand-soil rounded-full border-4 border-slate-900 hidden md:flex items-center justify-center">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="md:w-1/2 text-left order-2 pl-0 md:pl-12">
+                        <div class="inline-block p-2 bg-brand-soil rounded-lg mb-4 shadow-lg shadow-amber-700/30">
+                            <i class="fa-solid fa-globe text-white text-xl"></i>
+                        </div>
+                        <h3 data-translate="step2_title" class="text-3xl font-bold mb-4">4. Protective Packaging</h3>
+                        <p data-translate="step2_desc" class="text-slate-300 text-lg leading-relaxed">
+                            Every sprouted Earth Ball is placed into a ventilation-balanced FilizBox designed to <strong>preserve moisture, protect the root, and maintain optimal conditions</strong> throughout the journey — without requiring cold-chain logistics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-12 relative">
+                    <div class="md:w-1/2 text-right order-2 md:order-1 pr-0 md:pr-12">
+                        <div class="inline-block p-2 bg-brand-green rounded-lg mb-4 shadow-lg shadow-brand-green/30">
+                            <i class="fa-solid fa-check-double text-white text-xl"></i>
+                        </div>
+                        <h3 data-translate="step3_title" class="text-3xl font-bold mb-4">5. Ready-to-Plant Deployment</h3>
+                        <p data-translate="step3_desc" class="text-slate-300 text-lg leading-relaxed">
+                            When the FilizBox arrives, the farmer simply plants each Earth Ball directly into the soil. <strong>No soaking, no special equipment, no uncertainty</strong> — just consistent growth and a strong, reliable start for every crop.
+                        </p>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-brand-green rounded-full border-4 border-slate-900 hidden md:flex items-center justify-center">
+                        <div class="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <div class="md:w-1/2 order-1 md:order-2 pl-0 md:pl-12 w-full">
+                         <div class="media-container rounded-2xl aspect-video w-full border border-slate-700 hover:border-brand-green transition relative overflow-hidden">
+                            <video autoplay loop muted playsinline class="w-full h-full object-cover rounded-2xl">
+                                <source src="video\farmer.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Comparison Section -->
     <section id="comparison" class="py-20 bg-emerald-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-serif font-bold text-slate-900">Why Filizbox Wins</h2>
-                <p class="mt-4 text-slate-600">See how we stack up against the competition.</p>
+                <h2 data-translate="comp_title" class="text-3xl font-serif font-bold text-slate-900">Why Filizbox Wins</h2>
+                <p data-translate="comp_sub" class="mt-4 text-slate-600">See how we stack up against the competition.</p>
             </div>
 
-            <!-- Comparison Table Container -->
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
                 <div class="overflow-x-auto">
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-slate-50 border-b border-slate-200">
-                                <th class="p-6 text-sm font-bold tracking-wider text-slate-500 uppercase">Feature</th>
+                                <th data-translate="th_feature" class="p-6 text-sm font-bold tracking-wider text-slate-500 uppercase">Feature</th>
                                 <th class="p-6 bg-brand-green/10 border-t-4 border-brand-green text-center w-1/4">
-                                    <span class="text-brand-green font-bold text-xl block">Filizbox</span>
-                                    <span class="text-xs text-brand-dark uppercase tracking-wide">Our Solution</span>
+                                    <span data-translate="th_filizbox" class="text-brand-green font-bold text-xl block">Filizbox</span>
+                                    <span data-translate="th_filizbox_sub" class="text-xs text-brand-dark uppercase tracking-wide">Our Solution</span>
                                 </th>
                                 <th class="p-6 text-center w-1/4">
-                                    <span class="text-slate-700 font-bold block">Traditional Seeds</span>
-                                    <span class="text-xs text-slate-400 uppercase tracking-wide">Raw Sowing</span>
+                                    <span data-translate="th_trad" class="text-slate-700 font-bold block">Traditional Seeds</span>
+                                    <span data-translate="th_trad_sub" class="text-xs text-slate-400 uppercase tracking-wide">Raw Sowing</span>
                                 </th>
                                 <th class="p-6 text-center w-1/4">
                                     <span class="text-slate-700 font-bold block">Competitor X</span>
@@ -273,19 +293,19 @@
                         </thead>
                         <tbody class="divide-y divide-slate-100">
                             <tr>
-                                <td class="p-6 font-medium text-slate-700">Germination Success Rate</td>
+                                <td data-translate="row_germ" class="p-6 font-medium text-slate-700">Germination Success Rate</td>
                                 <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">98-100%</td>
                                 <td class="p-6 text-center text-slate-500">60-75%</td>
                                 <td class="p-6 text-center text-slate-500">80-85%</td>
                             </tr>
                             <tr>
-                                <td class="p-6 font-medium text-slate-700">Water Requirement (Initial)</td>
-                                <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">Minimal (Self-contained)</td>
-                                <td class="p-6 text-center text-slate-500">High (Flood irrigation)</td>
+                                <td data-translate="row_water" class="p-6 font-medium text-slate-700">Water Requirement (Initial)</td>
+                                <td data-translate="val_water_filiz" class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">Minimal (Self-contained)</td>
+                                <td data-translate="val_water_trad" class="p-6 text-center text-slate-500">High (Flood irrigation)</td>
                                 <td class="p-6 text-center text-slate-500">Moderate</td>
                             </tr>
                             <tr>
-                                <td class="p-6 font-medium text-slate-700">Bird/Pest Resistance</td>
+                                <td data-translate="row_pest" class="p-6 font-medium text-slate-700">Bird/Pest Resistance</td>
                                 <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">
                                     <i class="fa-solid fa-shield-halved text-xl"></i> High
                                 </td>
@@ -297,9 +317,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="p-6 font-medium text-slate-700">Planting Speed</td>
-                                <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">Fast (Drop & Go)</td>
-                                <td class="p-6 text-center text-slate-500">Slow (Soil Prep)</td>
+                                <td data-translate="row_speed" class="p-6 font-medium text-slate-700">Planting Speed</td>
+                                <td data-translate="val_speed_filiz" class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">Fast (Drop & Go)</td>
+                                <td data-translate="val_speed_trad" class="p-6 text-center text-slate-500">Slow (Soil Prep)</td>
                                 <td class="p-6 text-center text-slate-500">Medium</td>
                             </tr>
                         </tbody>
@@ -309,26 +329,23 @@
         </div>
     </section>
 
-    <!-- Visual Divider -->
     <div class="h-24 bg-gradient-to-b from-emerald-50 to-white"></div>
 
-    <!-- CTA Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-serif font-bold text-slate-900 mb-6">Ready to Grow with Filizbox?</h2>
-            <p class="text-lg text-slate-600 mb-10">We are currently in the MVP phase, accepting pre-orders from select agricultural partners and home gardeners.</p>
+            <h2 data-translate="cta_title" class="text-4xl font-serif font-bold text-slate-900 mb-6">Ready to Grow with Filizbox?</h2>
+            <p data-translate="cta_desc" class="text-lg text-slate-600 mb-10">We are currently in the MVP phase, accepting pre-orders from select agricultural partners and home gardeners.</p>
             
             <form class="max-w-md mx-auto space-y-4" onsubmit="event.preventDefault(); alert('Thank you! This is a demo form for the MVP.');">
-                <input type="email" placeholder="Enter your email address" class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition" required>
-                <button type="submit" class="w-full px-8 py-4 bg-brand-green text-white rounded-xl font-bold text-lg hover:bg-brand-dark transition shadow-lg shadow-brand-green/30">
+                <input data-translate-placeholder="form_placeholder" type="email" placeholder="Enter your email address" class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition" required>
+                <button data-translate="cta_btn" type="submit" class="w-full px-8 py-4 bg-brand-green text-white rounded-xl font-bold text-lg hover:bg-brand-dark transition shadow-lg shadow-brand-green/30">
                     Join the Waiting List
                 </button>
             </form>
-            <p class="mt-6 text-sm text-slate-400">Limited supply for the first batch. No credit card required.</p>
+            <p data-translate="cta_note" class="mt-6 text-sm text-slate-400">Limited supply for the first batch. No credit card required.</p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-6 md:mb-0">
@@ -359,8 +376,8 @@
         </div>
     </footer>
 
-    <!-- Simple Mobile Menu Script -->
     <script>
+        // --- Mobile Menu Toggle ---
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
@@ -377,6 +394,124 @@
                 document.getElementById('mobile-menu').classList.add('hidden');
             });
         });
+
+        // --- Language Configuration ---
+        const translations = {
+            en: {
+                meta_desc: "Filizbox: Pre-germinated, nutrient-wrapped seed balls for guaranteed maize growth.",
+                nav_problem: "The Problem",
+                nav_process: "Our Process",
+                nav_why: "Why Us?",
+                nav_preorder: "Pre-Order MVP",
+                hero_badge: "The Future of Agriculture",
+                hero_title: "Stop Planting Seeds.<br>Start Planting <span class='text-brand-green'>Success.</span>",
+                hero_desc: "Filizbox revolutionizes maize farming by pre-germinating seeds and wrapping them in a nutrient-rich earth shield. <br><strong>100% Germination Rate. Zero Waste.</strong>",
+                btn_how: "See How It Works <i class='fa-solid fa-arrow-down'></i>",
+                btn_compare: "Compare Savings",
+                process_badge: "Our Technology",
+                process_title: "The Filizbox Method",
+                process_desc: "From a simple seed to a robust, pre-sprouted earth ball. Here is how we engineer success.",
+                step1_title: "1. Hydro-Activation",
+                step1_desc: "We don't just plant dry seeds. We initiate the <strong>germination phase</strong> using a controlled hydro-environment. This wakes the seed up from dormancy, ensuring it is biologically active before it ever reaches the soil.",
+                step2_title: "2. Earth Encapsulation",
+                step2_desc: "The activated seed is carefully wrapped in a proprietary blend of <strong>nutrient-rich soil and natural binders</strong>. This \"Earth Ball\" acts as a protective bunker, holding moisture and essential minerals directly against the seed coat.",
+                step3_title: "3. Verified Sprouting",
+                step3_desc: "We don't sell hope; we sell life. We allow the seed balls to begin sprouting in our facility. Only when the <strong>taproot is visible and viable</strong> is the Filizbox packed and shipped to you.",
+                comp_title: "Why Filizbox Wins",
+                comp_sub: "See how we stack up against the competition.",
+                th_feature: "Feature",
+                th_filizbox: "Filizbox",
+                th_filizbox_sub: "Our Solution",
+                th_trad: "Traditional Seeds",
+                th_trad_sub: "Raw Sowing",
+                row_germ: "Germination Success Rate",
+                row_water: "Water Requirement (Initial)",
+                val_water_filiz: "Minimal (Self-contained)",
+                val_water_trad: "High (Flood irrigation)",
+                row_pest: "Bird/Pest Resistance",
+                row_speed: "Planting Speed",
+                val_speed_filiz: "Fast (Drop & Go)",
+                val_speed_trad: "Slow (Soil Prep)",
+                cta_title: "Ready to Grow with Filizbox?",
+                cta_desc: "We are currently in the MVP phase, accepting pre-orders from select agricultural partners and home gardeners.",
+                form_placeholder: "Enter your email address",
+                cta_btn: "Join the Waiting List",
+                cta_note: "Limited supply for the first batch. No credit card required."
+            },
+            tr: {
+                meta_desc: "Filizbox: Garantili mısır büyümesi için önceden çimlendirilmiş, besin kaplı tohum topları.",
+                nav_problem: "Sorun",
+                nav_process: "Sürecimiz",
+                nav_why: "Neden Biz?",
+                nav_preorder: "MVP Ön Sipariş",
+                hero_badge: "Tarımın Geleceği",
+                hero_title: "Tohum Ekmeyi Bırakın.<br>Başarı Ekmeye <span class='text-brand-green'>Başlayın.</span>",
+                hero_desc: "Filizbox, tohumları önceden çimlendirip besin açısından zengin bir toprak kalkanı ile sararak mısır tarımında devrim yaratıyor. <br><strong>%100 Çimlenme Oranı. Sıfır Atık.</strong>",
+                btn_how: "Nasıl Çalışır <i class='fa-solid fa-arrow-down'></i>",
+                btn_compare: "Kazancı Karşılaştır",
+                process_badge: "Teknolojimiz",
+                process_title: "Filizbox Yöntemi",
+                process_desc: "Basit bir tohumdan, önceden filizlenmiş sağlam bir toprak topuna. Başarıyı böyle mühendislik ediyoruz.",
+                step1_title: "1. Hidro-Aktivasyon",
+                step1_desc: "Sadece kuru tohum ekmiyoruz. Kontrollü bir hidro-ortam kullanarak <strong>çimlenme aşamasını</strong> başlatıyoruz. Bu, tohumu uykusundan uyandırır.",
+                step2_title: "2. Toprak Kapsülleme",
+                step2_desc: "Aktive edilmiş tohum, <strong>besin açısından zengin toprak ve doğal bağlayıcılardan</strong> oluşan özel bir karışımla dikkatlice sarılır. Bu \"Toprak Topu\" koruyucu bir sığınak görevi görür.",
+                step3_title: "3. Doğrulanmış Filizlenme",
+                step3_desc: "Umut satmıyoruz; yaşam satıyoruz. Tohum toplarının tesisimizde filizlenmesine izin veriyoruz. Sadece <strong>kök göründüğünde</strong> paketlenir ve size gönderilir.",
+                comp_title: "Neden Filizbox?",
+                comp_sub: "Rakiplere karşı nasıl üstün olduğumuzu görün.",
+                th_feature: "Özellik",
+                th_filizbox: "Filizbox",
+                th_filizbox_sub: "Bizim Çözümümüz",
+                th_trad: "Geleneksel Tohum",
+                th_trad_sub: "Ham Ekim",
+                row_germ: "Çimlenme Başarı Oranı",
+                row_water: "Su İhtiyacı (Başlangıç)",
+                val_water_filiz: "Minimum (Kendinden hazneli)",
+                val_water_trad: "Yüksek (Salma sulama)",
+                row_pest: "Kuş/Haşere Direnci",
+                row_speed: "Ekim Hızı",
+                val_speed_filiz: "Hızlı (Bırak ve Git)",
+                val_speed_trad: "Yavaş (Toprak Hazırlığı)",
+                cta_title: "Filizbox ile Büyümeye Hazır mısınız?",
+                cta_desc: "Şu anda MVP aşamasındayız, seçkin tarım ortaklarından ve ev bahçıvanlarından ön sipariş alıyoruz.",
+                form_placeholder: "E-posta adresinizi girin",
+                cta_btn: "Bekleme Listesine Katıl",
+                cta_note: "İlk parti için sınırlı arz. Kredi kartı gerekmez."
+            }
+        };
+
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            // Switch Language State
+            currentLang = currentLang === 'en' ? 'tr' : 'en';
+            
+            // Update Button Text (Desktop)
+            const langLabel = document.getElementById('lang-label');
+            if(langLabel) langLabel.innerText = currentLang === 'en' ? 'TR' : 'EN';
+
+            // Update Content
+            updateContent();
+        }
+
+        function updateContent() {
+            // 1. Update text/html content
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[currentLang][key]) {
+                    el.innerHTML = translations[currentLang][key];
+                }
+            });
+
+            // 2. Update placeholders (for inputs)
+            document.querySelectorAll('[data-translate-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-translate-placeholder');
+                if (translations[currentLang][key]) {
+                    el.placeholder = translations[currentLang][key];
+                }
+            });
+        }
     </script>
 </body>
 </html>
