@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filizbox | The Future of Maize Cultivation</title>
-    <meta name="description" data-translate="meta_desc" content="Filizbox: Pre-germinated, nutrient-wrapped seed balls for guaranteed maize growth.">
+    <title>Filizbox | Mısır Yetiştiriciliğinin Geleceği</title>
+    <meta name="description" data-translate="meta_desc" content="Filizbox: Garantili mısır büyümesi için önceden çimlendirilmiş, besin kaplı tohum topları.">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -40,13 +40,6 @@
             background-color: #27a571;
             overflow: hidden;
         }
-        
-        .blob {
-            position: absolute;
-            filter: blur(40px);
-            z-index: -1;
-            opacity: 0.4;
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
@@ -74,17 +67,17 @@
                     </svg>
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#problem" data-translate="nav_problem" class="text-slate-600 hover:text-brand-green font-medium">The Problem</a>
-                    <a href="#process" data-translate="nav_process" class="text-slate-600 hover:text-brand-green font-medium">Our Process</a>
-                    <a href="#comparison" data-translate="nav_why" class="text-slate-600 hover:text-brand-green font-medium">Why Us?</a>
+                    <a href="#problem" data-translate="nav_problem" class="text-slate-600 hover:text-brand-green font-medium">Sorun</a>
+                    <a href="#process" data-translate="nav_process" class="text-slate-600 hover:text-brand-green font-medium">Sürecimiz</a>
+                    <a href="#comparison" data-translate="nav_why" class="text-slate-600 hover:text-brand-green font-medium">Neden Biz?</a>
                     
                     <button onclick="toggleLanguage()" class="flex items-center space-x-1 text-slate-600 hover:text-brand-green font-medium focus:outline-none">
                         <i class="fa-solid fa-globe"></i>
-                        <span id="lang-label">TR</span>
+                        <span id="lang-label">EN</span>
                     </button>
 
                     <a href="#contact" data-translate="nav_preorder" class="px-6 py-2.5 bg-brand-green text-white rounded-full font-semibold hover:bg-brand-dark transition shadow-lg shadow-brand-green/30">
-                        Pre-Order MVP
+                        MVP Ön Sipariş
                     </a>
                 </div>
                 <div class="md:hidden">
@@ -95,12 +88,12 @@
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
-            <a href="#problem" data-translate="nav_problem" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">The Problem</a>
-            <a href="#process" data-translate="nav_process" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Our Process</a>
-            <a href="#comparison" data-translate="nav_why" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Why Us?</a>
-            <a href="#contact" data-translate="nav_preorder" class="block py-3 px-4 text-brand-green font-bold">Pre-Order MVP</a>
+            <a href="#problem" data-translate="nav_problem" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Sorun</a>
+            <a href="#process" data-translate="nav_process" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Sürecimiz</a>
+            <a href="#comparison" data-translate="nav_why" class="block py-3 px-4 text-slate-600 hover:bg-slate-50">Neden Biz?</a>
+            <a href="#contact" data-translate="nav_preorder" class="block py-3 px-4 text-brand-green font-bold">MVP Ön Sipariş</a>
             <button onclick="toggleLanguage()" class="block w-full text-left py-3 px-4 text-slate-600 hover:bg-slate-50 font-medium">
-                <i class="fa-solid fa-globe mr-2"></i> <span id="mobile-lang-label">TR / EN</span>
+                <i class="fa-solid fa-globe mr-2"></i> <span id="mobile-lang-label">EN / TR</span>
             </button>
         </div>
     </nav>
@@ -116,20 +109,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <div class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-brand-dark text-sm font-semibold mb-6 border border-green-200">
                 <span class="w-2 h-2 rounded-full bg-brand-green mr-2 animate-pulse"></span>
-                <span data-translate="hero_badge">The Future of Agriculture</span>
+                <span data-translate="hero_badge">Tarımın Geleceği</span>
             </div>
             <h1 class="text-5xl md:text-7xl font-serif font-bold text-slate-900 mb-8 leading-tight">
-                <span data-translate="hero_title">Stop Planting Seeds.<br>Start Planting <span class="text-brand-green">Success.</span></span>
+                <span data-translate="hero_title">Tohum Ekmeyi Bırakın.<br>Başarı Ekmeye <span class='text-brand-green'>Başlayın.</span></span>
             </h1>
             <p data-translate="hero_desc" class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Filizbox revolutionizes maize farming by pre-germinating seeds and wrapping them in a nutrient-rich earth shield. <br><strong>100% Germination Rate. Zero Waste.</strong>
+                Filizbox, tohumları önceden çimlendirip besin açısından zengin bir toprak kalkanı ile sararak mısır tarımında devrim yaratıyor. <br><strong>%100 Çimlenme Oranı. Sıfır Atık.</strong>
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#process" data-translate="btn_how" class="px-8 py-4 bg-brand-green text-white rounded-full font-bold text-lg hover:bg-brand-dark transition shadow-xl shadow-brand-green/30 flex items-center justify-center gap-2">
-                    See How It Works <i class="fa-solid fa-arrow-down"></i>
+                    Nasıl Çalışır <i class='fa-solid fa-arrow-down'></i>
                 </a>
                 <a href="#comparison" data-translate="btn_compare" class="px-8 py-4 bg-white text-slate-700 border border-slate-200 rounded-full font-bold text-lg hover:border-brand-green hover:text-brand-green transition flex items-center justify-center">
-                    Compare Savings
+                    Kazancı Karşılaştır
                 </a>
             </div>
         </div>
@@ -142,9 +135,9 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-20">
-                <span data-translate="process_badge" class="text-brand-corn font-bold tracking-widest uppercase text-sm">Our Technology</span>
-                <h2 data-translate="process_title" class="text-4xl md:text-5xl font-serif font-bold mt-2">The Filizbox Method</h2>
-                <p data-translate="process_desc" class="text-slate-400 mt-4 max-w-2xl mx-auto">From a simple seed to a robust, pre-sprouted earth ball. Here is how we engineer success.</p>
+                <span data-translate="process_badge" class="text-brand-corn font-bold tracking-widest uppercase text-sm">Teknolojimiz</span>
+                <h2 data-translate="process_title" class="text-4xl md:text-5xl font-serif font-bold mt-2">Filizbox Yöntemi</h2>
+                <p data-translate="process_desc" class="text-slate-400 mt-4 max-w-2xl mx-auto">Basit bir tohumdan, önceden filizlenmiş sağlam bir toprak topuna. Başarıyı böyle mühendislik ediyoruz.</p>
             </div>
 
             <div class="space-y-24 relative">
@@ -155,9 +148,9 @@
                         <div class="inline-block p-2 bg-blue-600 rounded-lg mb-4 shadow-lg shadow-blue-500/30">
                             <i class="fa-solid fa-water text-white text-xl"></i>
                         </div>
-                        <h3 data-translate="step1_title" class="text-3xl font-bold mb-4">1. Hydro-Activation</h3>
+                        <h3 data-translate="step1_title" class="text-3xl font-bold mb-4">1. Hidro-Aktivasyon</h3>
                         <p data-translate="step1_desc" class="text-slate-300 text-lg leading-relaxed">
-                            We don't just plant dry seeds. We initiate the <strong>germination phase</strong> using a controlled hydro-environment. This wakes the seed up from dormancy, ensuring it is biologically active before it ever reaches the soil.
+                            Sadece kuru tohum ekmiyoruz. Kontrollü bir hidro-ortam kullanarak <strong>çimlenme aşamasını</strong> başlatıyoruz. Bu, tohumu uykusundan uyandırır.
                         </p>
                     </div>
                     <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-500 rounded-full border-4 border-slate-900 hidden md:flex items-center justify-center">
@@ -187,9 +180,9 @@
                         <div class="inline-block p-2 bg-brand-soil rounded-lg mb-4 shadow-lg shadow-amber-700/30">
                             <i class="fa-solid fa-globe text-white text-xl"></i>
                         </div>
-                        <h3 data-translate="step2_title" class="text-3xl font-bold mb-4">2. Earth Encapsulation</h3>
+                        <h3 data-translate="step2_title" class="text-3xl font-bold mb-4">2. Toprak Kapsülleme</h3>
                         <p data-translate="step2_desc" class="text-slate-300 text-lg leading-relaxed">
-                            The activated seed is carefully wrapped in a proprietary blend of <strong>nutrient-rich soil and natural binders</strong>. This "Earth Ball" acts as a protective bunker, holding moisture and essential minerals directly against the seed coat.
+                            Aktive edilmiş tohum, <strong>besin açısından zengin toprak ve doğal bağlayıcılardan</strong> oluşan özel bir karışımla dikkatlice sarılır. Bu "Toprak Topu" koruyucu bir sığınak görevi görür.
                         </p>
                     </div>
                 </div>
@@ -199,9 +192,9 @@
                         <div class="inline-block p-2 bg-brand-green rounded-lg mb-4 shadow-lg shadow-brand-green/30">
                             <i class="fa-solid fa-check-double text-white text-xl"></i>
                         </div>
-                        <h3 data-translate="step3_title" class="text-3xl font-bold mb-4">3. Verified Sprouting</h3>
+                        <h3 data-translate="step3_title" class="text-3xl font-bold mb-4">3. Doğrulanmış Filizlenme</h3>
                         <p data-translate="step3_desc" class="text-slate-300 text-lg leading-relaxed">
-                            We don't sell hope; we sell life. We allow the seed balls to begin sprouting in our facility. Only when the <strong>taproot is visible and viable</strong> is the Filizbox packed and shipped to you.
+                            Umut satmıyoruz; yaşam satıyoruz. Tohum toplarının tesisimizde filizlenmesine izin veriyoruz. Sadece <strong>kök göründüğünde</strong> paketlenir ve size gönderilir.
                         </p>
                     </div>
                     <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-brand-green rounded-full border-4 border-slate-900 hidden md:flex items-center justify-center">
@@ -231,9 +224,9 @@
                         <div class="inline-block p-2 bg-brand-soil rounded-lg mb-4 shadow-lg shadow-amber-700/30">
                             <i class="fa-solid fa-box text-white text-xl"></i>
                         </div>
-                        <h3 data-translate="step4_title" class="text-3xl font-bold mb-4">4. Protective Packaging</h3>
+                        <h3 data-translate="step4_title" class="text-3xl font-bold mb-4">4. Koruyucu Paketleme</h3>
                         <p data-translate="step4_desc" class="text-slate-300 text-lg leading-relaxed">
-                            Every sprouted Earth Ball is placed into a ventilation-balanced FilizBox designed to <strong>preserve moisture, protect the root, and maintain optimal conditions</strong> throughout the journey — without requiring cold-chain logistics.
+                            Her filizlenmiş Toprak Topu, soğuk zincir lojistiğine gerek duymadan yolculuk boyunca <strong>nemi korumak, kökü muhafaza etmek ve optimal koşulları sürdürmek</strong> için tasarlanmış, havalandırma dengeli bir FilizBox'a yerleştirilir.
                         </p>
                     </div>
                 </div>
@@ -243,9 +236,9 @@
                         <div class="inline-block p-2 bg-brand-green rounded-lg mb-4 shadow-lg shadow-brand-green/30">
                             <i class="fa-solid fa-sun-plant-wilt text-white text-xl"></i>
                         </div>
-                        <h3 data-translate="step5_title" class="text-3xl font-bold mb-4">5. Ready-to-Plant Deployment</h3>
+                        <h3 data-translate="step5_title" class="text-3xl font-bold mb-4">5. Ekime Hazır Dağıtım</h3>
                         <p data-translate="step5_desc" class="text-slate-300 text-lg leading-relaxed">
-                            When the FilizBox arrives, the farmer simply plants each Earth Ball directly into the soil. <strong>No soaking, no special equipment, no uncertainty</strong> — just consistent growth and a strong, reliable start for every crop.
+                            FilizBox ulaştığında, çiftçi her bir Toprak Topunu doğrudan toprağa eker. <strong>Suda bekletme yok, özel ekipman yok, belirsizlik yok</strong> — sadece tutarlı büyüme ve her mahsul için güçlü, güvenilir bir başlangıç.
                         </p>
                     </div>
                     <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-brand-green rounded-full border-4 border-slate-900 hidden md:flex items-center justify-center">
@@ -265,10 +258,10 @@
     </section>
 
     <section id="comparison" class="py-20 bg-emerald-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 data-translate="comp_title" class="text-3xl font-serif font-bold text-slate-900">Why Filizbox Wins</h2>
-                <p data-translate="comp_sub" class="mt-4 text-slate-600">See how we stack up against the competition.</p>
+                <h2 data-translate="comp_title" class="text-3xl font-serif font-bold text-slate-900">Neden Filizbox?</h2>
+                <p data-translate="comp_sub" class="mt-4 text-slate-600">Rakiplere karşı nasıl üstün olduğumuzu görün.</p>
             </div>
 
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
@@ -276,51 +269,48 @@
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-slate-50 border-b border-slate-200">
-                                <th data-translate="th_feature" class="p-6 text-sm font-bold tracking-wider text-slate-500 uppercase">Feature</th>
+                                <th data-translate="th_feature" class="p-6 text-sm font-bold tracking-wider text-slate-500 uppercase">Özellik</th>
                                 <th class="p-6 bg-brand-green/10 border-t-4 border-brand-green text-center w-1/4">
                                     <span data-translate="th_filizbox" class="text-brand-green font-bold text-xl block">Filizbox</span>
-                                    <span data-translate="th_filizbox_sub" class="text-xs text-brand-dark uppercase tracking-wide">Our Solution</span>
+                                    <span data-translate="th_filizbox_sub" class="text-xs text-brand-dark uppercase tracking-wide">Bizim Çözümümüz</span>
                                 </th>
                                 <th class="p-6 text-center w-1/4">
-                                    <span data-translate="th_trad" class="text-slate-700 font-bold block">Traditional Seeds</span>
-                                    <span data-translate="th_trad_sub" class="text-xs text-slate-400 uppercase tracking-wide">Raw Sowing</span>
-                                </th>
-                                <th class="p-6 text-center w-1/4">
-                                    <span class="text-slate-700 font-bold block">Competitor X</span>
-                                    <span class="text-xs text-slate-400 uppercase tracking-wide">Coated Seeds</span>
+                                    <span data-translate="th_trad" class="text-slate-700 font-bold block">Geleneksel Tohum</span>
+                                    <span data-translate="th_trad_sub" class="text-xs text-slate-400 uppercase tracking-wide">Ham Ekim</span>
                                 </th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100">
                             <tr>
-                                <td data-translate="row_germ" class="p-6 font-medium text-slate-700">Germination Success Rate</td>
-                                <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">98-100%</td>
+                                <td data-translate="row_germ" class="p-6 font-medium text-slate-700">Çimlenme Başarı Oranı</td>
+                                <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">+98%</td>
                                 <td class="p-6 text-center text-slate-500">60-75%</td>
-                                <td class="p-6 text-center text-slate-500">80-85%</td>
                             </tr>
                             <tr>
-                                <td data-translate="row_water" class="p-6 font-medium text-slate-700">Water Requirement (Initial)</td>
-                                <td data-translate="val_water_filiz" class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">Minimal (Self-contained)</td>
-                                <td data-translate="val_water_trad" class="p-6 text-center text-slate-500">High (Flood irrigation)</td>
-                                <td class="p-6 text-center text-slate-500">Moderate</td>
+                                <td data-translate="row_water" class="p-6 font-medium text-slate-700">Hasat Süresi</td>
+                                <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-dark text-lg ">
+                                    <span data-translate="val_harvest_filiz" class="block">60 Gün</span>
+                                    <span data-translate="val_harvest_filiz_sub" class="text-sm text-green-700 font-semibold">%57 daha hızlı</span>
+                                    <i class="fa-solid fa-circle-check text-brand-green ml-2"></i>
+                                </td>  
+                                <td data-translate="val_harvest_trad" class="p-6 text-center text-slate-500">140 Gün</td>
+
                             </tr>
                             <tr>
-                                <td data-translate="row_pest" class="p-6 font-medium text-slate-700">Bird/Pest Resistance</td>
-                                <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">
-                                    <i class="fa-solid fa-shield-halved text-xl"></i> High
-                                </td>
-                                <td class="p-6 text-center text-slate-500">
-                                    <i class="fa-solid fa-xmark text-red-400 text-xl"></i> None
-                                </td>
-                                <td class="p-6 text-center text-slate-500">
-                                    <i class="fa-solid fa-minus text-amber-400 text-xl"></i> Low
+                                <td data-translate="row_pest" class="p-6 font-medium text-slate-700">İş Gücü</td>
+                                <td class="p-6 bg-brand-green/5 text-center font-bold text-brand-dark text-lg">
+                                    <span data-translate="val_labor_filiz" class="block">3 Farklı İşlem</span>
+                                    <span data-translate="val_labor_filiz_sub" class="text-sm text-green-700 font-semibold">%60 daha az</span>
+                                <i class="fa-solid fa-circle-check text-brand-green ml-2"></i>
+                                
+                                <td data-translate="val_labor_trad" class="p-6 text-center text-slate-500">
+                                8 Farklı İşlem
                                 </td>
                             </tr>
                             <tr>
-                                <td data-translate="row_speed" class="p-6 font-medium text-slate-700">Planting Speed</td>
-                                <td data-translate="val_speed_filiz" class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">Fast (Drop & Go)</td>
-                                <td data-translate="val_speed_trad" class="p-6 text-center text-slate-500">Slow (Soil Prep)</td>
-                                <td class="p-6 text-center text-slate-500">Medium</td>
+                                <td data-translate="row_speed" class="p-6 font-medium text-slate-700">Ekim Hızı</td>
+                                <td data-translate="val_speed_filiz" class="p-6 bg-brand-green/5 text-center font-bold text-brand-green">Hızlı (Bırak ve Git)</td>
+                                <td data-translate="val_speed_trad" class="p-6 text-center text-slate-500">Yavaş (Toprak Hazırlığı)</td>
                             </tr>
                         </tbody>
                     </table>
@@ -329,20 +319,21 @@
         </div>
     </section>
 
+
     <div class="h-24 bg-gradient-to-b from-emerald-50 to-white"></div>
 
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 data-translate="cta_title" class="text-4xl font-serif font-bold text-slate-900 mb-6">Ready to Grow with Filizbox?</h2>
-            <p data-translate="cta_desc" class="text-lg text-slate-600 mb-10">We are currently in the MVP phase, accepting pre-orders from select agricultural partners and home gardeners.</p>
+            <h2 data-translate="cta_title" class="text-4xl font-serif font-bold text-slate-900 mb-6">Filizbox ile Büyümeye Hazır mısınız?</h2>
+            <p data-translate="cta_desc" class="text-lg text-slate-600 mb-10">Şu anda MVP aşamasındayız, seçkin tarım ortaklarından ve ev bahçıvanlarından ön sipariş alıyoruz.</p>
             
             <form class="max-w-md mx-auto space-y-4" onsubmit="event.preventDefault(); alert('Thank you! This is a demo form for the MVP.');">
-                <input data-translate-placeholder="form_placeholder" type="email" placeholder="Enter your email address" class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition" required>
+                <input data-translate-placeholder="form_placeholder" type="email" placeholder="E-posta adresinizi girin" class="w-full px-5 py-4 rounded-xl border border-slate-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none transition" required>
                 <button data-translate="cta_btn" type="submit" class="w-full px-8 py-4 bg-brand-green text-white rounded-xl font-bold text-lg hover:bg-brand-dark transition shadow-lg shadow-brand-green/30">
-                    Join the Waiting List
+                    Bekleme Listesine Katıl
                 </button>
             </form>
-            <p data-translate="cta_note" class="mt-6 text-sm text-slate-400">Limited supply for the first batch. No credit card required.</p>
+            <p data-translate="cta_note" class="mt-6 text-sm text-slate-400">İlk parti için sınırlı arz. Kredi kartı gerekmez.</p>
         </div>
     </section>
 
@@ -421,28 +412,39 @@
                 // Step 3
                 step3_title: "3. Verified Sprouting",
                 step3_desc: "We don't sell hope; we sell life. We allow the seed balls to begin sprouting in our facility. Only when the <strong>taproot is visible and viable</strong> is the Filizbox packed and shipped to you.",
-                // Step 4 (FIXED)
+                // Step 4
                 step4_title: "4. Protective Packaging",
                 step4_desc: "Every sprouted Earth Ball is placed into a ventilation-balanced FilizBox designed to <strong>preserve moisture, protect the root, and maintain optimal conditions</strong> throughout the journey — without requiring cold-chain logistics.",
-                // Step 5 (FIXED)
+                // Step 5
                 step5_title: "5. Ready-to-Plant Deployment",
                 step5_desc: "When the FilizBox arrives, the farmer simply plants each Earth Ball directly into the soil. <strong>No soaking, no special equipment, no uncertainty</strong> — just consistent growth and a strong, reliable start for every crop.",
 
+                // Comparison Table
                 comp_title: "Why Filizbox Wins",
                 comp_sub: "See how we stack up against the competition.",
-                th_feature: "Feature",
-                th_filizbox: "Filizbox",
-                th_filizbox_sub: "Our Solution",
-                th_trad: "Traditional Seeds",
-                th_trad_sub: "Raw Sowing",
+                th_feature: "Criteria",
+                th_filizbox: "filizbox",
+                th_filizbox_sub: " ",
+                th_trad: "Traditional Method",
+                
+                // Rows
+                row_harvest: "Harvest Time",
+                val_harvest_trad: "140 Days",
+                val_harvest_filiz: "60 Days",
+                val_harvest_filiz_sub: "57% faster",
+
+                row_labor: "Labor / Workforce",
+                val_labor_trad: "8 Different Operations",
+                val_labor_filiz: "3 Different Operations",
+                val_labor_filiz_sub: "60% less",
+
                 row_germ: "Germination Success Rate",
-                row_water: "Water Requirement (Initial)",
-                val_water_filiz: "Minimal (Self-contained)",
-                val_water_trad: "High (Flood irrigation)",
-                row_pest: "Bird/Pest Resistance",
+                val_germ_filiz_sub: "Up to 30% increase",
+
                 row_speed: "Planting Speed",
                 val_speed_filiz: "Fast (Drop & Go)",
                 val_speed_trad: "Slow (Soil Prep)",
+                
                 cta_title: "Ready to Grow with Filizbox?",
                 cta_desc: "We are currently in the MVP phase, accepting pre-orders from select agricultural partners and home gardeners.",
                 form_placeholder: "Enter your email address",
@@ -473,28 +475,40 @@
                 // Step 3
                 step3_title: "3. Doğrulanmış Filizlenme",
                 step3_desc: "Umut satmıyoruz; yaşam satıyoruz. Tohum toplarının tesisimizde filizlenmesine izin veriyoruz. Sadece <strong>kök göründüğünde</strong> paketlenir ve size gönderilir.",
-                // Step 4 (NEW TRANSLATION)
+                // Step 4
                 step4_title: "4. Koruyucu Paketleme",
                 step4_desc: "Her filizlenmiş Toprak Topu, soğuk zincir lojistiğine gerek duymadan yolculuk boyunca <strong>nemi korumak, kökü muhafaza etmek ve optimal koşulları sürdürmek</strong> için tasarlanmış, havalandırma dengeli bir FilizBox'a yerleştirilir.",
-                // Step 5 (NEW TRANSLATION)
+                // Step 5
                 step5_title: "5. Ekime Hazır Dağıtım",
                 step5_desc: "FilizBox ulaştığında, çiftçi her bir Toprak Topunu doğrudan toprağa eker. <strong>Suda bekletme yok, özel ekipman yok, belirsizlik yok</strong> — sadece tutarlı büyüme ve her mahsul için güçlü, güvenilir bir başlangıç.",
 
+                // Comparison Table
                 comp_title: "Neden Filizbox?",
                 comp_sub: "Rakiplere karşı nasıl üstün olduğumuzu görün.",
-                th_feature: "Özellik",
-                th_filizbox: "Filizbox",
-                th_filizbox_sub: "Bizim Çözümümüz",
-                th_trad: "Geleneksel Tohum",
-                th_trad_sub: "Ham Ekim",
+                th_feature: "Kriter",
+                th_filizbox: "filizbox",
+                th_filizbox_sub: " ",
+                th_trad: "Geleneksel Yöntem",
+                
+                // Rows
+                row_harvest: "Hasat Süresi",
+                val_harvest_trad: "140 Gün",
+                val_harvest_filiz: "60 Gün",
+                val_harvest_filiz_sub: "%57 daha hızlı",
+
+                row_labor: "İş Gücü",
+                val_labor_trad: "8 Farklı İşlem",
+                val_labor_filiz: "3 Farklı İşlem",
+                val_labor_filiz_sub: "%60 daha az",
+
                 row_germ: "Çimlenme Başarı Oranı",
-                row_water: "Su İhtiyacı (Başlangıç)",
-                val_water_filiz: "Minimum (Kendinden hazneli)",
-                val_water_trad: "Yüksek (Salma sulama)",
-                row_pest: "Kuş/Haşere Direnci",
+                val_germ_filiz_sub: "+%30'a varan artış",
+
                 row_speed: "Ekim Hızı",
-                val_speed_filiz: "Hızlı (Bırak ve Git)",
+                val_speed_filiz: "Hızlı (Bırak & Git)",
                 val_speed_trad: "Yavaş (Toprak Hazırlığı)",
+
+
                 cta_title: "Filizbox ile Büyümeye Hazır mısınız?",
                 cta_desc: "Şu anda MVP aşamasındayız, seçkin tarım ortaklarından ve ev bahçıvanlarından ön sipariş alıyoruz.",
                 form_placeholder: "E-posta adresinizi girin",
@@ -503,7 +517,7 @@
             }
         };
 
-        let currentLang = 'en';
+        let currentLang = 'tr'; // Default set to Turkish
 
         function toggleLanguage() {
             // Switch Language State
@@ -512,6 +526,10 @@
             // Update Button Text (Desktop)
             const langLabel = document.getElementById('lang-label');
             if(langLabel) langLabel.innerText = currentLang === 'en' ? 'TR' : 'EN';
+            
+            // Update Mobile Button
+            const mobileLangLabel = document.getElementById('mobile-lang-label');
+            if(mobileLangLabel) mobileLangLabel.innerText = currentLang === 'en' ? 'TR / EN' : 'EN / TR';
 
             // Update Content
             updateContent();
